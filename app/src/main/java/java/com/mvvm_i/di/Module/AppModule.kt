@@ -3,18 +3,14 @@ package java.com.mvvm_i.di.Module
 import android.app.Application
 import android.content.Context
 import dagger.Module
-import java.com.mvvm_i.di.ForApplication
-import javax.inject.Singleton
 import dagger.Provides
-
-
-
+import javax.inject.Singleton
 
 @Module
 class AppModule(val application: Application) {
 
   @Provides
-  @ForApplication
+  @Singleton
   fun provideContext(): Context {
     return application
   }

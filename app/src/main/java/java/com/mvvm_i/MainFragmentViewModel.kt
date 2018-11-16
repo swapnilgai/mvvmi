@@ -6,8 +6,7 @@ import javax.inject.Inject
 class MainFragmentViewModel {
 
   @Inject
-  lateinit var apiAccessService : ApiAccessService
-
+  lateinit var apiAccessService: ApiAccessService
 
 
 }

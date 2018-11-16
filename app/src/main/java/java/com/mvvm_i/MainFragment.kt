@@ -1,8 +1,8 @@
 package java.com.mvvm_i
 
 
-import android.os.Bundle
 import android.app.Fragment
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,14 +20,16 @@ class MainFragment : Fragment() {
   @Inject
   lateinit var apiAccessService: ApiAccessService
 
+  @Inject
+  lateinit var apiAccess: ApiAccess
+
   override fun onCreateView(
     inflater: LayoutInflater, container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View? {
     // Inflate the layout for this fragment
-    //App.appComponent.inject(this)
 
-    App.fragmetComponent.inject(this)
+    App.fragmentComponent.inject(this)
 
     apiAccessService.getApiAccess()
 
