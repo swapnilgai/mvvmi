@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">mvvm-i</string>
+  <string name="url">https://us-central1-stashandroidchallenge.cloudfunctions.net/api/</string>
+</resources>
