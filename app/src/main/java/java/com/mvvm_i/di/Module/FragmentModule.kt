@@ -10,7 +10,7 @@ class FragmentModule {
 
   @Provides
   @ForActivity
-  fun getFragment(): MainFragment{
+  fun getFragment(): MainFragment {
     return MainFragment()
   }
 }
